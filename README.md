@@ -56,24 +56,8 @@ When using hashcat to crack bcrypt hashes (Mode 3200), the environment significa
 Virtual machines (VMs) often lack direct access to hardware acceleration, while native macOS systems can leverage powerful Metal (GPU) acceleration.
 Note on Bcrypt: Even on fast hardware, bcrypt is designed to be slow. 
 
-## Files in this repo
-
-    scripts/extract_hashes.sh - Extract bcrypt hashes from SQL dump
-
-    scripts/crack.sh - Run Hashcat with optimal settings
-
-    samples/hash_example.txt - Example bcrypt hash
-
-## Commands reference
-### Extract hashes
-./scripts/extract_hashes.sh database.sql hashes.txt
-
-### Crack with Hashcat
-./scripts/crack.sh hashes.txt /path/to/rockyou.txt
-
-### Check results
-hashcat -m 3200 --show hashes.txt
-
+## Commands I used
+All commands are documented in this README. No additional scripts are needed.
 
 ## Tools used
 
